@@ -108,6 +108,10 @@ img {
   grid-template-columns: 160px 1fr min-content;
 }
 
+.main-header__logo[href]:hover {
+  opacity: 0.3;
+}
+
 .site-nav {
   margin: 0;
   padding: 0;
