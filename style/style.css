@@ -58,12 +58,11 @@ img {
   margin: 0;
   padding: 0;
 
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
   font-family: "Roboto", Arial, sans-serif;
   color: var(--basic-white);
-  text-transform: uppercase;
 
   background-color: var(--basic-black);
 }
