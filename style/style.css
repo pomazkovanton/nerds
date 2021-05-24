@@ -26,6 +26,24 @@
        url("../fonts/Roboto-Regular.woff") format("woff");
 }
 
+/* Переменные */
+
+:root {
+  --basic-font-black: #000000;
+  --basic-font-darc: #283136;
+  --basic-font-gray: #444444;
+  --basic-font-light: #666666;
+
+  --basic-gray:  #EEEEEE;
+  --basic-gray-social: #E1E1E1;
+  --basic-gray-slider-btn: #C1C1C1;
+  --basic-gray-catalog: #4D4D4D;
+
+  --special-red: #FB565A;
+  --special-green: #00CA74;
+  --special-yellow: #EFC849;
+}
+
 /* Глобальные стили */
 a {
   text-decoration: none;
