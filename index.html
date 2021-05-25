@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
     <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body class="page-body">
@@ -38,6 +39,45 @@
         </nav>
       </div>
     </header>
+    <main>
+      <h1 class="visually-hidden">Сайт дизайн студии Nerds</h1>
+      <section class="slider">
+        <div class="main-container swiper-container">
+          <h2 class="visually-hidden">Слайдер с нашими преимуществами</h2>
+          <ul class="slider__list swiper-wrapper">
+            <li class="slider__item slider__item_1 swiper-slide">
+              <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
+              <p class="slider__description">
+                Математически выверенный дизайн <br>
+                для вашего сайта или мобильного приложения.
+              </p>
+              <a href="./blank.html" class="slider__button"><span>Узнать больше</span></a>
+            </li>
+            <li class="slider__item slider__item_2 swiper-slide">
+              <h3 class="slider__title">Любим математику как никто другой</h3>
+              <p class="slider__description">
+                Никакого креатива, только математические формулы <br>
+                для расчета идеальных пропорций
+              </p>
+              <a href="./blank.html" class="slider__button"><span>Узнать больше</span></a>
+            </li>
+            <li class="slider__item slider__item_3 swiper-slide">
+              <h3 class="slider__title">
+                Только ночь, <br>
+                только хардкор
+              </h3>
+              <p class="slider__description">
+                Работать днем, как все? Мы против этого. <br>
+                Ближе к полуночи работа только начинается.
+              </p>
+              <a href="./blank.html" class="slider__button"><span>Узнать больше</span></a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
