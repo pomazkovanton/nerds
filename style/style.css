@@ -497,3 +497,35 @@ img {
 .table__footer {
   line-height: 18px;
 }
+
+/* Partners */
+
+.partners {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid var(--basic-gray);
+}
+
+.partners__list {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.partners__link {
+  opacity: 0.2;
+}
+
+.partners__link:hover {
+  opacity: 1;
+}
+
+.partners__link:active {
+  opacity: 0.1;
+}
