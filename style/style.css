@@ -530,3 +530,144 @@ img {
 .partners__link:active {
   opacity: 0.1;
 }
+
+/* Footer */
+
+.footer-contacts {
+  position: relative;
+}
+
+.footer__img-map {
+  position: absolute;
+  height: 416px;
+  z-index: -1;
+}
+
+.footer__contacts-wrapper{
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-580px);
+  padding: 50px;
+  max-width: 320px;
+  background-color: var(--basic-font-white);
+}
+
+.footer__contacts-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer__contacts-adress {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.footer__contacts-tel {
+  display: block;
+  margin-bottom: 33px;
+  color: var(--basic-font-darc);
+}
+
+.footer__contacts-btn {
+  display: inline-block;
+  padding: 16px 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic-font-white);
+  border: none;
+  background-color: var(--special-red);
+  cursor: pointer;
+}
+
+.footer__contacts-btn:hover {
+  background-color: var(--special-red-hover);
+}
+
+.footer__contacts-btn:active {
+  background-color: var(--special-red-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.footer__contacts-btn:active span {
+  opacity: 0.3;
+}
+
+.social{
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+
+.social__wrapper-left{
+  min-width: 260px;
+  margin-right: 140px;
+}
+
+.social__list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: var(--basic-gray-social);
+}
+
+.social__icon-vk{
+  display: block;
+  width: 26px;
+  height: 15px;
+  background-image: url(../img/vk.svg);
+}
+
+.social__icon-fb{
+  display: block;
+  width: 12px;
+  height: 22px;
+  background-image: url(../img/fb.svg);
+}
+
+.social__icon-inst{
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/inst.svg);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--special-red-hover);
+}
+
+.social__link:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social__link:active span {
+  opacity: 0.3;
+}
+
+.social__wrapper-right{}
+
+.social__slogan{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.social__text{
+  margin: 0;
+}
