@@ -503,6 +503,7 @@ img {
 .partners {
   padding-top: 45px;
   padding-bottom: 35px;
+  margin-bottom: 80px;
   border-bottom: 2px solid var(--basic-gray);
 }
 
