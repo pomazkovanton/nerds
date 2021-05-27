@@ -41,6 +41,12 @@
   --basic-gray-catalog: #4D4D4D;
   --basic-gray-form: #D7DCDE;
   --basic-gray-form-hover: #B4B9BB;
+  --basic-gray-form-scale: #D7DCDF;
+  --basic-gray-form-toggle: #ABABAB;
+  --basic-gray-form-radio: #4D4D4D;
+  --basic-gray-form-btn-hover: #DFDFDF;
+  --basic-gray-form-btn-active: #D5D5D5;
+
 
   --special-red: #FB565A;
   --special-red-hover: #E74246;
@@ -852,4 +858,216 @@ img {
   font-weight: 500;
   text-align: center;
   background-color:var(--basic-gray);
+}
+
+.filter__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 35px;
+}
+
+.filter__item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter__item-range {
+  margin-bottom: 55px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  background-color: var(--basic-gray);
+  border-radius: 5px;
+}
+
+.scale {
+  height: 2px;
+  background-color: var(--basic-gray-form-scale);
+}
+
+.bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--special-green);
+}
+
+.toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-font-white);
+  background-color: var(--basic-gray-form-toggle);
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 18px;
+}
+
+.toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  text-align: center;
+  color: var(--basic-font-black);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--basic-gray);
+  font: inherit;
+  font-size: inherit;
+}
+
+.filter__item-grid {
+  margin-bottom: 50px;
+}
+
+.filter__item-features {
+  margin-bottom: 50px;
+}
+
+.filter__legend {
+  margin-bottom: 15px;
+}
+
+.grid-list,
+.features-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  list-style: none;
+}
+
+.grid-item:not(:last-child),
+.features-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.grid-label,
+.features-label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.grid-radio + label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 4px solid var(--basic-gray-form-radio);
+  opacity: 0.4;
+}
+
+.grid-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--basic-gray-form-radio);
+  opacity: 0.4;
+}
+
+.grid-radio:hover + label::before,
+.grid-radio:hover + label::after,
+.grid-radio:focus + label::before,
+.grid-radio:focus + label::after {
+  opacity: 1;
+}
+
+.features-checbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.features-checbox:checked + label::before {
+  width: 25px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.features-checbox:hover + label::before,
+.features-checbox:focus + label::before {
+  opacity: 1;
+}
+
+.features-checbox:disabled + label::before {
+  opacity: 0.1;
+}
+
+.features-checbox:disabled + label{
+  opacity: 0.3;
+}
+
+.filter-btn {
+  width: 260px;
+  padding: 17px;
+  line-height: 18px;
+  color: var(--basic-font-black);
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  background-color: var(--basic-gray);
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color:var(--basic-gray-form-btn-hover);
+}
+
+.filter-btn:active {
+  background-color:var(--basic-gray-form-btn-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.filter-btn:active span{
+  opacity: 0.3;
 }

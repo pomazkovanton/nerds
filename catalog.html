@@ -40,6 +40,77 @@
     </header>
     <main class="catalog-main">
       <h1 class="catalog-main__title">Магазин готовых шаблонов</h1>
+      <div class="main-container">
+        <section class="filter">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <fieldset class="filter__item filter__item-range">
+              <legend class="filter__legend">Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до
+                    <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter__item filter__item-grid">
+              <legend class="filter__legend">Сетка:</legend>
+              <ul class="grid-list">
+                <li class="grid-item">
+                  <input class="grid-radio visually-hidden" type="radio" name="grid" value="adaptiv" id="adaptiv" checked>
+                  <label class="grid-label" for="adaptiv">Адаптивная</label>
+                </li>
+                <li class="grid-item">
+                  <input class="grid-radio visually-hidden" type="radio" name="grid" value="fixid" id="fixid">
+                  <label class="grid-label" for="fixid">Фиксированная</label>
+                </li>
+                <li class="grid-item">
+                  <input class="grid-radio visually-hidden" type="radio" name="grid" value="rubber" id="rubber">
+                  <label class="grid-label" for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__item filter__item-features">
+              <legend class="filter__legend">Особенности:</legend>
+              <ul class="features-list">
+                <li class="features-item">
+                  <input class="features-checbox visually-hidden" type="checkbox" name="slider" id="slider" checked>
+                  <label class="features-label" for="slider">Слайдер</label>
+                </li>
+                <li class="features-item">
+                  <input class="features-checbox visually-hidden" type="checkbox" name="features-block" id="features-block">
+                  <label class="features-label" for="features-block">Блок преимуществ</label>
+                </li>
+                <li class="features-item">
+                  <input class="features-checbox visually-hidden" type="checkbox" name="news" id="news" checked>
+                  <label class="features-label" for="news">Новости</label>
+                </li>
+                <li class="features-item">
+                  <input class="features-checbox visually-hidden" type="checkbox" name="galery" id="galery">
+                  <label class="features-label" for="galery">Галерея</label>
+                </li>
+                <li class="features-item">
+                  <input class="features-checbox visually-hidden" type="checkbox" name="cart" id="cart" disabled>
+                  <label class="features-label" for="cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter-btn" type="submit"><span>Показать</span></button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <section class="footer-contacts">
