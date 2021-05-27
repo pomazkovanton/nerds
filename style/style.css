@@ -141,6 +141,10 @@ img {
   margin-right: 44px;
 }
 
+.site-nav__item:nth-child(2) {
+  margin-right: 48px;
+}
+
 .site-nav__link,
 .user-nav__link {
   color: var(--basic-font-black);
@@ -168,7 +172,7 @@ img {
   content: "";
   position: absolute;
   width: 100%;
-  bottom: -15px;
+  bottom: -20px;
 
   height: 2px;
 
@@ -834,4 +838,18 @@ img {
 
 .modal__btn-close:active {
   opacity: 0.1;
+}
+
+/* Страница catalog */
+
+.catalog-main__title {
+  margin: 0;
+  margin-bottom: 55px;
+  padding-top: 65px;
+  padding-bottom: 110px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  background-color:var(--basic-gray);
 }
