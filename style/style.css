@@ -138,7 +138,9 @@ img {
 }
 
 .site-nav__link:hover,
-.user-nav__link:hover {
+.user-nav__link:hover,
+.site-nav__link:focus,
+.user-nav__link:focus {
   color: var(--special-red);
 }
 
@@ -228,7 +230,8 @@ img {
   border-radius: 3px;
 }
 
-.slider__button:hover {
+.slider__button:hover,
+.slider__button:focus {
   background-color: var(--special-red-hover);
 }
 
@@ -369,15 +372,18 @@ img {
   background-color: var(--special-yellow);
 }
 
-.services_btn_red:hover {
+.services_btn_red:hover,
+.services_btn_red:focus {
   background-color: var(--special-red-active);
 }
 
-.services_btn_green:hover {
+.services_btn_green:hover,
+.services_btn_green:focus {
   background-color: var(--special-green-hover);
 }
 
-.services_btn_yellow:hover {
+.services_btn_yellow:hover,
+.services_btn_yellow:focus {
   background-color: var(--special-yellow-hover);
 }
 
@@ -523,7 +529,8 @@ img {
   opacity: 0.2;
 }
 
-.partners__link:hover {
+.partners__link:hover,
+.partners__link:focus {
   opacity: 1;
 }
 
@@ -580,7 +587,8 @@ img {
   cursor: pointer;
 }
 
-.footer__contacts-btn:hover {
+.footer__contacts-btn:hover,
+.footer__contacts-btn:focus {
   background-color: var(--special-red-hover);
 }
 
