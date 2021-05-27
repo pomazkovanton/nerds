@@ -39,6 +39,8 @@
   --basic-gray-social: #E1E1E1;
   --basic-gray-slider-btn: #C1C1C1;
   --basic-gray-catalog: #4D4D4D;
+  --basic-gray-form: #D7DCDE;
+  --basic-gray-form-hover: #B4B9BB;
 
   --special-red: #FB565A;
   --special-red-hover: #E74246;
@@ -666,8 +668,6 @@ img {
   opacity: 0.3;
 }
 
-.social__wrapper-right{}
-
 .social__slogan{
   display: inline-block;
   margin-bottom: 10px;
@@ -678,4 +678,153 @@ img {
 
 .social__text{
   margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  box-sizing: border-box;
+  width: 960px;
+  margin: auto;
+  padding: 65px 100px 85px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  background-color: var(--basic-font-white);
+}
+
+.modal_show {
+  display: block;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--basic-font-black);
+}
+
+.modal__wrapper {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.modal__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.modal__label {
+  margin-bottom: 9px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-font-black);
+}
+
+.modal__input {
+  padding: 16px;
+  width: 360px;
+  height: 50px;
+}
+
+.modal__input,
+.modal__textarea {
+  box-sizing: border-box;
+  border: 2px solid var(--basic-gray-form);
+}
+
+.modal__input::placeholder,
+.modal__textarea::placeholder {
+  color: var(--basic-font-black);
+  opacity: 0.5;
+}
+
+.modal__input:hover,
+.modal__textarea:hover {
+  border: 2px solid var(--basic-gray-form-hover);
+}
+
+.modal__input:focus,
+.modal__textarea:focus {
+  border: 2px solid var(--basic-font-black);
+}
+
+.modal__input:focus::placeholder,
+.modal__textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.modal__input:not(:focus):invalid,
+.modal__textarea:not(:focus):invalid {
+  border: 2px solid var(--special-red);
+}
+
+.modal__input:not(:focus):invalid,
+.modal__textarea:not(:focus):invalid {
+  color: red;
+}
+
+.modal__textarea {
+  width: 760px;
+  height: 118px;
+  margin-bottom: 45px;
+  padding: 16px;
+  resize: none;
+}
+
+.modal__btn-submit {
+  padding: 16px 83px;
+  line-height: 18px;
+  color: var(--basic-font-white);
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  background-color: var(--special-red);
+  cursor: pointer;
+}
+
+.modal__btn-submit:hover,
+.modal__btn-submit:focus {
+  background-color: var(--special-red-hover);
+}
+
+.modal__btn-submit:active {
+  background-color: var(--special-red-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.modal__btn-submit:active span {
+  opacity: 0.3;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/close.svg);
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal__btn-close:hover,
+.modal__btn-close:focus {
+  opacity: 1;
+}
+
+.modal__btn-close:active {
+  opacity: 0.1;
 }
