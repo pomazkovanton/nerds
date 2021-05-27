@@ -848,6 +848,12 @@ img {
 
 /* Страница catalog */
 
+.catalog-main .main-container{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-column-gap: 140px;
+}
+
 .catalog-main__title {
   margin: 0;
   margin-bottom: 55px;
@@ -1070,4 +1076,82 @@ img {
 
 .filter-btn:active span{
   opacity: 0.3;
+}
+
+/* Filter Sort */
+
+.filter-sort {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-font-black);
+}
+
+.sort__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sort-list-one,
+.sort-list-two{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.sort-list-one li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.sort-list-one a {
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-font-black);
+}
+
+.sort-list-one a:hover,
+.sort-list-one a:focus {
+  opacity: 0.6;
+}
+
+.sort-list-one a:active {
+  opacity: 1;
+}
+
+.sort-list-one .active,
+.sort-list-two .active {
+  opacity: 1;
+  cursor: default;
+}
+
+.sort-list-one {
+  margin-right: 47px;
+}
+
+.sort-item-down {
+  margin-right: 18px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.sort-item-up {
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-up-dir.png);
+  opacity: 0.3;
+  cursor: pointer;
 }
