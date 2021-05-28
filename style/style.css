@@ -1081,7 +1081,7 @@ img {
 /* Filter Sort */
 
 .filter-sort {
-  margin-bottom: 48px;
+  margin-bottom: 88px;
   display: flex;
   justify-content: space-between;
 }
@@ -1154,4 +1154,114 @@ img {
   background-image: url(../img/icon-up-dir.png);
   opacity: 0.3;
   cursor: pointer;
+}
+
+/* Catalog */
+
+.catalog {
+  margin-bottom: 55px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 70px;
+  list-style: none;
+}
+
+.catalog__item {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.catalog__img {
+  height: 100%;
+}
+
+.catalog__item:hover::before,
+.catalog__item:focus::before {
+  opacity: 1;
+}
+
+.catalog__item:hover .catalog__wrapper,
+.catalog__item:focus .catalog__wrapper  {
+  display: block;
+}
+
+.catalog__item::before {
+  content: "";
+  width: 360px;
+  height: 40px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-image: url(../img/browser.svg);
+  opacity: 0.3;
+}
+
+.catalog__wrapper {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 45px;
+  text-align: center;
+  background-color: var(--basic-gray);
+}
+
+.catalog__item-title {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.catalog__item-title-link {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-font-black);
+}
+
+.catalog__item-title-link:hover,
+.catalog__item-title-link:focus {
+  color: var(--special-red);
+}
+
+.catalog__item-title-link:active {
+  color: var(--basic-font-black);
+  opacity: 0.3;
+}
+
+.catalog__item-description {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: var(--basic-font-light);
+}
+
+.catalog__item-btn {
+  padding: 16px 72px;
+
+  color: var(--basic-font-white);
+  font-weight: 500;
+  background-color: var(--special-red);
+  border-radius: 3px;
+}
+
+.catalog__item-btn:hover,
+.catalog__item-btn:focus {
+  background-color: var(--special-red-hover);
+}
+
+.catalog__item-btn:active {
+  background-color: var(--special-red-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
